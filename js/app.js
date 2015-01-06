@@ -180,7 +180,7 @@ var headLeft = function(x, y, s, r){
 	world.ctx.lineTo(x+s, y+s);
 	world.ctx.arc(x+r, y+s-r, r, 0.5 * Math.PI, 1 * Math.PI, false);
 	world.ctx.closePath()
-	world.ctx.fillStyle = 'red'
+	world.ctx.fillStyle = '#80a55c'
 	world.ctx.fill()
 }
 
@@ -192,7 +192,7 @@ var headRight = function(x, y, s, r){
 	world.ctx.arc(x+s-r, y+s-r, r, 2 * Math.PI, 0.5 * Math.PI, false);
 	world.ctx.lineTo(x, y+s);
 	world.ctx.closePath()
-	world.ctx.fillStyle = 'red'
+	world.ctx.fillStyle = '#80a55c'
 	world.ctx.fill()
 }
 
@@ -203,7 +203,7 @@ var headUp = function(x, y, s, r){
 	world.ctx.lineTo(x+s, y+s);
 	world.ctx.lineTo(x, y+s);
 	world.ctx.closePath()
-	world.ctx.fillStyle = 'red'
+	world.ctx.fillStyle = '#80a55c'
 	world.ctx.fill()
 }
 
@@ -214,7 +214,7 @@ var headDown = function(x, y, s, r){
 	world.ctx.arc(x+s-r, y+s-r, r, 2 * Math.PI, 0.5 * Math.PI, false);
 	world.ctx.arc(x+r, y+s-r, r, 0.5 * Math.PI, 1 * Math.PI, false);
 	world.ctx.closePath()
-	world.ctx.fillStyle = 'red'
+	world.ctx.fillStyle = '#80a55c'
 	world.ctx.fill()
 }
 
