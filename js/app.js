@@ -319,10 +319,10 @@ Snake.prototype.omnomnom = function(){
 // Метод проверки на нахождение в пределах экрана и телепортации
 Snake.prototype.teleport = function(){
 	var head = this.slots[0];
-	if (head[0] < 0) {head[0] = world.width};
-	if (head[0] > world.width) {head[0] = 0};
-	if (head[1] < 0) {head[1] = world.height};
-	if (head[1] > world.height) {head[1] = 0};
+	if (head[0] < 0) {head[0] = world.width - world.slot};
+	if (head[0] > world.width - world.slot) {head[0] = 0};
+	if (head[1] < 0) {head[1] = world.height - world.slot};
+	if (head[1] > world.height - world.slot) {head[1] = 0};
 }
 
 
