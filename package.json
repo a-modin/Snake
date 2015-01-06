@@ -1,0 +1,36 @@
+{
+  "name": "Snake",
+  "version": "1.0.0",
+  "description": "Snake game",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/modin777/Snake.git"
+  },
+  "keywords": [
+    "snake",
+    "game",
+    "js"
+  ],
+  "author": "Andrey Modin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/modin777/Snake/issues"
+  },
+  "homepage": "https://github.com/modin777/Snake",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-autoprefixer": "^2.0.0",
+    "gulp-concat": "^2.4.3",
+    "gulp-connect": "^2.2.0",
+    "gulp-cssmin": "^0.1.6",
+    "gulp-less": "^2.0.1",
+    "gulp-minify-html": "^0.1.8",
+    "gulp-plumber": "^0.6.6",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^1.0.2"
+  }
+}
