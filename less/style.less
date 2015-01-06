@@ -16,14 +16,14 @@ body{
 	.panel{
 		width: 100%;
 		height: 60px;
-		background-color: green;
+		background-color: @color2;
 
 
 		.scores, .speed{
 			width: 50%;
 			height: 100%;
 			float: left;
-			background-color: red;
+			background-color: @color2;
 
 			h2{
 				font-family: 'Ubuntu Condensed', sans-serif;
@@ -39,7 +39,7 @@ body{
 	.game-over-back{
 		width: 100%;
 		height: 100%;
-		background-color: green;
+		background-color: @color1;
 		position: absolute;
 		display: none;
 		
@@ -54,8 +54,19 @@ body{
 				font-weight: normal;
 				text-transform: uppercase;
 			}
+
+			.but-reload{
+				width: 200px;
+				height: 50px;
+				text-transform: uppercase;
+				background-color: red;
+				border: 0;
+				color: @color2;
+				margin-left: 150px;
+				margin-top: 30px;
+				cursor: pointer
+			}
 		}
-		
 	}
 }
 

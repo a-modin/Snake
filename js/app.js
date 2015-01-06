@@ -57,7 +57,7 @@ var game = {
 		clearInterval(world.timerS);
 		clearInterval(world.timerP);
 		gameOver.style.display = "block"
-		gameOverMes.innerHTML = "<h2>Вы проиграли</h2> <h2>Набрано очков: "+ game.points + "</h2> <h2>Уровень: " + game.level + "</h2>"
+		gameOverMes.innerHTML = "<h2>Вы проиграли</h2> <h2>Набрано очков: "+ game.points + "</h2> <h2>Уровень: " + game.level + "</h2>" + "<button class='but-reload' onclick='location.reload()'> Начать заново </button>"
 
 	}
 }
