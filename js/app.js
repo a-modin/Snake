@@ -32,6 +32,19 @@ window.addEventListener('keypress', handler, false);
 window.addEventListener('keyup', handler, false);
 
 
+////////////////////////////////////////////////////////
+// ЗВУК
+////////////////////////////////////////////////////////
+
+
+function amam() {
+	var amamSound = new Audio(); // Создаём новый элемент Audio
+	amamSound.src = '../sounds/amam.mp3'; // Указываем путь к звуку "клика"
+	amamSound.autoplay = true; // Автоматически запускаем
+}
+
+
+
 
 ////////////////////////////////////////////////////////
 // ИГРА
@@ -313,6 +326,7 @@ Snake.prototype.omnomnom = function(){
 	this.slots.push(newSlot);
 	game.points += 1;
 	game.levelPoints += 1;
+	amam();
 }
 
 
@@ -324,7 +338,6 @@ Snake.prototype.teleport = function(){
 	if (head[1] < 0) {head[1] = world.height - world.slot};
 	if (head[1] > world.height - world.slot) {head[1] = 0};
 }
-
 
 
 
