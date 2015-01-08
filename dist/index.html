@@ -1,31 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" class="nojs">
 <head>
-	<meta charset="UTF-8">
-	<title>Змейка</title>
-	
-	<base href="[[++site_url]]" /> <!-- ModX -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	
-	<link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="css/styles.min.css">
+  <meta charset="UTF-8">
+  <title>Змейка</title>
+  
+  <base href="[[++site_url]]" /> <!-- ModX -->
+  
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/styles.min.css">
 </head>
 <body>
-	<div class="wrapper">
-		<div class="game-over-back" id="gameOver">
-			<div class="game-over" id="gameOverMes">
-				<h2>Вы проиграли</h2>
-				<h2>Набрано очков: 26</h2>
-				<h2>Уровень: 5</h2>
-				<button class="but-reload" onclick="location.reload()"> Начать заново </button>
-			</div>
-		</div>
-		<div class="panel" id="panel">
-			<div class="scores" id="scores"></div>
-			<div class="speed" id="speed"></div>
-		</div>
-		<canvas class="canvas" id="canvas" height="600" width="500"></canvas>
-	</div>
-	<script src="js/app.js"></script>
+  <div class="wrapper">
+    <div class="game-start" id="gameStart">
+      <button class="start-but" id="startBut" >Начать</button>
+    </div>
+    <div class="game-over-back" id="gameOver">
+      <div class="game-over" id="gameOverMes"></div>
+    </div>
+    <div class="panel" id="panel">
+      <div class="scores" id="scores"></div>
+      <div class="speed" id="speed"></div>
+    </div>
+    <canvas class="canvas" id="canvas" height="600" width="500"></canvas>
+  </div>
+  <script src="js/app.js"></script>
 </body>
 </html>

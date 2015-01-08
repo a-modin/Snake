@@ -39,8 +39,10 @@ gulp.task('less', function(){
 gulp.task('jsmin', function() {
 	gulp.src('js/*.js')
 	.pipe(plumber())
-	.pipe(uglify())
 	.pipe(concat('app.js'))
+	.pipe(gulp.dest('dist/js'))
+	.pipe(uglify())
+	.pipe(rename({suffix: '.min'}))
 	.pipe(gulp.dest('dist/js'))
 	.pipe(connect.reload())
 });

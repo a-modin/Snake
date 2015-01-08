@@ -7,6 +7,32 @@ body{
 	margin: 10px auto;
 	position: relative;
 
+	.game-start{
+		width: 100%;
+		height: 100%;
+		background-color: @color4;
+		background-image: url('../images/snake-logo.jpg');
+		background-position: 108px 100px;
+		background-repeat: no-repeat;
+		position: absolute;
+		display: block;
+
+		.start-but{
+			width: 200px;
+			height: 50px;
+			text-transform: uppercase;
+			background-color: @color2;
+			border: 0;
+			font-size: 13px;
+			color: @color4;
+			margin-left: 150px;
+			margin-top: 30px;
+			cursor: pointer;
+			position: absolute;
+			bottom: 110px;
+		}
+	}
+
 	.canvas{
 		background-color: white;
 		background-image: url('../images/back.jpg');

@@ -6,6 +6,30 @@ body {
   margin: 10px auto;
   position: relative;
 }
+.wrapper .game-start {
+  width: 100%;
+  height: 100%;
+  background-color: #ececec;
+  background-image: url('../images/snake-logo.jpg');
+  background-position: 108px 100px;
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block;
+}
+.wrapper .game-start .start-but {
+  width: 200px;
+  height: 50px;
+  text-transform: uppercase;
+  background-color: #80a55c;
+  border: 0;
+  font-size: 13px;
+  color: #ececec;
+  margin-left: 150px;
+  margin-top: 30px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 110px;
+}
 .wrapper .canvas {
   background-color: white;
   background-image: url('../images/back.jpg');

@@ -2,6 +2,13 @@ var scores = document.getElementById('scores');
 var speed = document.getElementById('speed');
 var gameOver = document.getElementById('gameOver');
 var gameOverMes = document.getElementById('gameOverMes');
+var startBut = document.getElementById('startBut');
+var gameStart = document.getElementById('gameStart');
+
+startBut.onclick = function(){
+	gameStart.style.display = 'none'
+	init();
+}
 
 ////////////////////////////////////////////////////////
 // СОБЫТИЯ НАЖАТИЯ КЛАВИШ
@@ -38,10 +45,30 @@ window.addEventListener('keyup', handler, false);
 
 
 function amam() {
-	var amamSound = new Audio(); // Создаём новый элемент Audio
-	amamSound.src = '../sounds/amam.mp3'; // Указываем путь к звуку "клика"
-	amamSound.autoplay = true; // Автоматически запускаем
+	var amamSound = new Audio();
+	amamSound.src = '../sounds/amam.mp3'; 
+	amamSound.autoplay = true; 
+	amamSound.volume = 1;
 }
+
+// var music = new Audio();
+// music.src = '../sounds/music.mp3';
+// music.autoplay = true;
+
+// isAppLoaded = function(){
+// 	alert('Загрузка закончилась')
+// }
+// console.log(music);
+// music.pause();
+// music.play();
+// music.volume = 1;
+// music.currentTime = 0;
+// music.muted = true;
+// console.log(music.preload);
+// music.addEventListener('canplaythrough', isAppLoaded, false);
+
+
+
 
 
 
@@ -344,12 +371,14 @@ Snake.prototype.teleport = function(){
 ////////////////////////////////////////////////////////
 // ИНИЦИАЛИЗАЦИЯ
 ////////////////////////////////////////////////////////
+var init = function(){
+	
+	world.tikS();
+	world.tikP();
+	render()
 
-var s = new Snake();
-var p = new Points();
-
-world.tikS();
-world.tikP();
+	
+}
 
 var render = function(){
 	requestAnimationFrame(render);
@@ -359,4 +388,11 @@ var render = function(){
 	s.teleport();
 }
 
-render()
+var s = new Snake();
+var p = new Points();
+
+
+
+// init()
+
+
